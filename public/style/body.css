@@ -1,0 +1,21 @@
+body {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.body-wrapper {
+  height: 100%;
+  max-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  margin: 0;
+}
+
+#typing-indicator {
+  color: var(--font-color-black-secondary);
+  margin-left: 40px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tumo Chat</title>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo_tumo.png" />
+      <h1>Tumo Chat</h1>
+      <img src="images/logo_campus.png" />
+    </header>
+    <div class="body-wrapper">
+      <div id="message-feed">
+        <!-- MESSAGES EXAMPLES -->
+        <div class="user-message">
+          <p class="user-message-time">17:04 • Anthony</p>
+          <p class="user-message-content">
+            Salut Michel, je suis prêt à faire chauffer les pizzas
+          </p>
+        </div>
+        <div class="user-message user-message-me">
+          <p class="user-message-time">17:07 • Michel</p>
+          <p class="user-message-content">Super ! Je ramène à boire :)</p>
+        </div>
+        <div class="user-message user-message-me">
+          <p class="user-message-time">17:08 • Michel</p>
+          <p class="user-message-content">
+            Tu as de la charcut' à la maison ? Si tu veux je prend la terrine
+            que nous a préparé Nicolette, elle est délicieuse ! 😋
+          </p>
+        </div>
+        <div class="system-message">
+            Ah nice ça ! On va bien se remplir le bidou !
+        </div>
+        <div class="user-message">
+          <p class="user-message-time">17:12 • Anthony</p>
+          <p class="user-message-content">
+            Ah nice ça ! On va bien se remplir le bidou !
+          </p>
+        </div>
+        <!-- MESSAGES EXAMPLES -->
+      </div>
+      <p id="typing-indicator">
+      </p>
+      <form id="message-form" class="input-wrapper" autocomplete="off">
+        <div class="input-bar">
+          <input
+            id="message-input"
+            type="text"
+            placeholder="Write something..."
+          />
+          <button type="submit" class="input-button">
+            <img id="message-send" src="images/send_button.png" />
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="socket.io/socket.io.js"></script>
+    <script type="module" src="scripts/index.js"></script>
+  </body>
+</html>
